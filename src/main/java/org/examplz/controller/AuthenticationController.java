@@ -46,7 +46,7 @@ public class AuthenticationController {
                     c.add(Calendar.SECOND, 30);
 
                     String jws = Jwts.builder()
-                            .claim("uid", account.getUid())
+                            // .claim("uid", account.getUid())
                             .claim("username", account.getUsername())
                             .claim("role", account.getRole())
                             .setExpiration(c.getTime())
