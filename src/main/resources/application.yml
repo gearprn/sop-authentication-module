@@ -1,0 +1,16 @@
+server:
+  port: 9191
+
+spring:
+  application:
+    name: authenticationService
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:sqlserver://sop2020-auth-sec2.database.windows.net:1433;database=sop2020-auth-db;user=gear@sop2020-auth-sec2;password=bullySOP2020;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: gear@sop2020-auth-sec2
+    password: bullySOP2020
+    initialization-mode: always
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
